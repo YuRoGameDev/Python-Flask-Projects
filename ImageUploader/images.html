@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/imagestyles.css"/>
+        <title>Image List</title>
+    </head>
+    <body>
+        Caption: <input type="text" id="caption">
+        <div>
+            <input type="file" id="file" accept="image/png, image/jpeg, image/jpg, image/gif, image/webp"/>
+            <button onclick="upload_file();">Upload</button>
+        </div>
+        <div id="uploadStatus"></div>
+        <div id="imageDivResults"></div>
+        <script src="/static/uploadscript.js"></script>
+        <script>
+            list_files();
+        </script>
+    </body>
+</html>

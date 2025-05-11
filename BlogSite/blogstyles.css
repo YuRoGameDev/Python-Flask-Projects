@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.container {
+    background-color: #f4f4f4;
+    padding: 0;
+    width: 90%;
+    max-width: 70%;
+}
+
+.section {
+    margin-bottom: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2em;
+}
+
+h2 {
+    margin-bottom: 0;
+    font-size: 1.2em;
+    color: #444;
+}
+
+label {
+    font-weight: bold;
+    color: #444;
+    padding: 10px;
+}
+
+input, .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.description-input {
+    height: 100px;
+    min-height: 100px;
+    max-height: 200px;
+    resize: vertical;
+    color: #444;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+     display:block;
+     margin: 10px auto;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.user-name {
+    font-size: 1.2em;
+    color: #444;
+}
+
+.blog-results {
+    width: 100%;
+    overflow: visible;
+    padding-right: 0;
+}
+
+.blog-entry {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.blog-user, .blog-title, .blog-date, .blog-description {
+    color: #444;
+}
+
+.blog-date{
+        display: inline;
+        margin: 0;
+        
+}
+
+.blog-user {
+    font-size: 1.3em;
+}
+
+.blog-title {
+    margin-top:-10px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.delete-btn {
+    width: 50%;
+    margin: 5 auto;
+    display: block;
+}
+
+#results {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #007bff;
+}

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/twitstyles.css"/>
+        <title>Feed</title>
+    </head>
+    <body>
+        <div class="container">
+            <section class="section">
+                <h1>Welcome to Bootleg Twitter</h1>
+            </section>
+            <section>
+                <div class="Column">
+                    <section class="section">
+                    <div id="MyProfile"></div>
+                    </section>
+
+
+                    <section class="section">
+                    <div id="Tweets"></div>
+                    </section>
+                </div>
+            </section>
+        </div>
+
+        <div id="tweetView" class="tweet-view hidden">
+
+            <div id = "viewedTweet"></div>
+            <div>
+            <div id = "logInReply"></div>
+            <button onclick="closeTweet()">Close Tweet</button>
+            </div>
+        </div>
+
+        <script src="/static/twitscript.js"></script>
+        <script>
+            let username = "{{username}}"
+
+            checkIfLoggedIn();
+            loadTweets("", username);
+        </script>
+
+    </body>
+</html>

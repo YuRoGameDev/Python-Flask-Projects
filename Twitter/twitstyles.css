@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.container {
+    background-color:black;
+    padding: 0;
+    width: 90%;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.Column {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.section {
+    flex: 1;
+    min-width: 300px;
+    min-height: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 1rem;
+    height: auto;
+    width: 100%;
+}
+
+h1, a {
+    text-align: center;
+    font-size: 2.2em;
+}
+
+h2, p  {
+    margin-bottom: 0;
+    font-size: 1.2em;
+    color: #444;
+}
+
+a{
+    cursor: pointer;
+}
+
+label {
+    font-weight: bold;
+    color: #444;
+    padding: 10px;
+}
+
+input, .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+     display:block;
+     margin: 10px auto;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+span {
+    font-size: 1.1rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.myProfilePic {
+    width: 20vw;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 1rem auto;
+}
+
+
+.description-input {
+    height: 100px;
+    min-height: 100px;
+    max-height: 200px;
+    resize: vertical;
+    color: #444;
+    font-family: Arial, sans-serif;
+}
+
+
+.tweet-view {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  border-radius: 8px;
+
+  max-height: 80vh;
+  overflow-y: auto;
+  width: 90%;
+  max-width: 700px;
+}
+
+.hidden {
+  display: none;
+}
+
+.tweet-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tweet-feed {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.5rem;
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    flex-shrink: 1;
+}
+
+.tweet-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.tweet-img {
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tweet-img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.tweet-user {
+    font-weight: bold;
+    color: #0077cc;
+    text-decoration: none;
+
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    word-break: normal;
+}
+
+.tweet-user:hover {
+    text-decoration: underline;
+}
+
+.tweet-description {
+    font-size: 1rem;
+    line-height: 1.4;
+    width: 100%;
+}
+
+.tweet-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    color: #666;
+    gap: 0.5rem;
+    width: 100%;
+     border: 2px solid #ccc;
+}
+
+.tweet-footer .btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+.reply-btn, .delete-btn {
+    padding: 0.3rem 0.6rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reply-btn {
+    background-color: green;
+}
+
+.delete-btn {
+    background-color: red;
+    align-self: flex-end;
+}

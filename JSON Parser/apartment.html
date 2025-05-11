@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Apartment Search</title>
+        <link rel="stylesheet" href="/JSONParserStyles.css" />
+    </head>
+    <body>
+        <div>
+            Search: <input type="text" id="txtSearch">
+
+            <select id = "bedFilter">
+                <option value="0">Any</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+            </select>
+
+            <select id = "selSort">
+                <option value="">None</option>
+                <option value="asc">Price Ascending</option>
+                <option value="dec">Price Descending</option>
+            </select>
+
+            <button onclick="search()">Go!</button>
+        </div>
+
+        <div id="divResults"/>
+
+       <script src="/JSONParserScript.js"></script>
+       <script>
+            //This is only really used when someone is filtering with the url. I had to use string.replace on the rawJson data because passing from Python to HTML converts ' to " which html can't read
+            window.onload = function() {
+                let rawjson = '{{data}}';
+                let fixedString = rawjson.replace(/&#39;/g,'"')
+                let data = JSON.parse(fixedString);
+                urlSearch(data);
+            };
+       </script>
+    </body>
+</html>

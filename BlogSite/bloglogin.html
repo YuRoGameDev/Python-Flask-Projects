@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/blogstyles.css"/>
+        <title>Blog Log In</title>
+    </head>
+    <body>
+        <div class="container">
+        <section class="section">
+            <h1>Blog Login</h1>
+            <button onclick="home_redirect();" class="btn logout-btn">Home</button>
+        </section>
+
+        <section class="section">
+            <h1>Create Account</h2>
+            <label for="createEmail">Email:</label>
+            <input type="text" id="createEmail" autocomplete="off" placeholder="Enter your email">
+
+            <label for="createUser">Username:</label>
+            <input type="text" id="createUser" autocomplete="off" placeholder="Choose a username" maxlength="12">
+
+            <label for="createPass">Password:</label>
+            <input type="password" id="createPass" autocomplete="off" placeholder="Enter your password">
+
+            <button onclick="logIn(true);">Create Account</button>
+        </section>
+
+
+        <section class="section">
+            <h1>Log In</h2>
+            <label for="logEmail">Email:</label>
+            <input type="text" id="logEmail" placeholder="Enter your email">
+
+            <label for="logPass">Password:</label>
+            <input type="password" id="logPass" autocomplete="off" placeholder="Enter your password">
+
+            <button onclick="logIn(false);">Log In</button>
+            <div id="results"></div>
+        </section>
+
+        </div>
+
+        <script src="/static/blogscript.js"></script>
+
+    </body>
+</html>

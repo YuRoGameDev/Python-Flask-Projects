@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/twitstyles.css"/>
+        <title>Feed</title>
+    </head>
+    <body>
+        <div class="container">
+            <section class="section">
+                <h1>Welcome to your profile {{username}}</h1>
+                 <button onclick="home_redirect();" class="btn logout-btn">View The Feed</button>
+            </section>
+            <section>
+                <div class="Column">
+                    <section class="section">
+                    <div id="MyProfile"></div>
+                    <div class="ProfilePic">
+                        <div id="myProfilePic"></div>
+                    </div>
+                    <div id="ChangeProfilePic"></div>
+                    <div id="uploadStatus"></div>
+
+                    </section>
+
+
+
+                    <section class="section">
+                    <div id="UploadTweet"></div>
+
+                    <section class="section">
+                        <div id="Tweets"></div>
+                    </section>
+                    </section>
+                </div>
+            </section>
+        </div>
+
+        <div id="tweetView" class="tweet-view hidden">
+
+            <div id = "viewedTweet"></div>
+            <div>
+            <h1>Reply</h1>
+            <textarea type="text" id="replyDescription" placeholder="Enter Description" class="input-field description-input" maxlength="1000"></textarea>
+            <button onclick="uploadTweet(true)" class="btn post-btn">Post</button>
+            <button onclick="closeTweet()">Close Tweet</button>
+            </div>
+        </div>
+
+        <script src="/static/twitscript.js"></script>
+        <script>
+            let username = "{{username}}"
+            getEmail(username,"myProfilePic");
+
+            checkIfMyPage(username);
+            loadTweets(username, "{{myUsername}}");
+        </script>
+
+    </body>
+</html>
+

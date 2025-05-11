@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Downtown Apartment",
+        "description": "A modern apartment with high ceilings and city views.",
+        "bedrooms": 2,
+        "rent": 2500
+    },
+    {
+        "title": "Studio in Midtown",
+        "description": "A small yet comfortable studio near restaurants and shopping centers.",
+        "bedrooms": 1,
+        "rent": 1200
+    },
+    {
+        "title": "Luxury High-Rise Apartment",
+        "description": "A premium apartment with top-notch amenities and security.",
+        "bedrooms": 3,
+        "rent": 4500
+    },
+    {
+        "title": "Suburban Home",
+        "description": "A nice house in the suburbs with a large backyard.",
+        "bedrooms": 1,
+        "rent": 1800
+    },
+    {
+        "title": "Beachfront Condo",
+        "description": "Enjoy ocean views and beach access from this stunning condo.",
+        "bedrooms": 2,
+        "rent": 3500
+    },
+    {
+        "title": "Quiet Countryside Cabin",
+        "description": "A peaceful retreat surrounded by nature and hiking trails.",
+        "bedrooms": 1,
+        "rent": 1400
+    },
+    {
+        "title": "Modern Apartment Near University",
+        "description": "Ideal for students, close to public transport and grocery stores.",
+        "bedrooms": 2,
+        "rent": 1600
+    },
+    {
+        "title": "Penthouse with City Skyline View",
+        "description": "A luxurious penthouse with a private rooftop terrace.",
+        "bedrooms": 4,
+        "rent": 6000
+    },
+    {
+        "title": "Affordable Basement Apartment",
+        "description": "A cozy and well-maintained basement unit with a separate entrance.",
+        "bedrooms": 1,
+        "rent": 900
+    },
+    {
+        "title": "Historic Townhouse in Old District",
+        "description": "A charming home with vintage architecture and modern upgrades.",
+        "bedrooms": 3,
+        "rent": 2800
+    }
+]

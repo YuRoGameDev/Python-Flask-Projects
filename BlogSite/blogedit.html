@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/blogstyles.css"/>
+        <title>Blog Edit Page</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="section">
+                <h1>Welcome<div id="userName" class="user-name"> </div></h1>
+                <button onclick="home_redirect();" class="btn logout-btn">Home</button>
+                <button onclick="logOut();" class="btn logout-btn">Log Out</button>
+            </div>
+            <div class="section">
+                <h1>Create a Post</h1>
+                <input type="text" id="title" placeholder="Enter Title" class="input-field title-input" maxlength="50"></input>
+                <textarea type="text" id="description" placeholder="Enter Description" class="input-field description-input" maxlength="1000"></textarea>
+                <button onclick="uploadBlog()" class="btn post-btn">Post</button>
+            </div>
+
+            <div class="section">
+                <h1>Your Posts</h1>
+            <div id="blogEditDivResults" class="blog-results"> </div>
+        </div>
+
+        <script src="/static/blogscript.js"></script>
+        <script>
+        getBlogEntries(false);
+        getSessionName();
+        </script>
+    </body>
+</html>

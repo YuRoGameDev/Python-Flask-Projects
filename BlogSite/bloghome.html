@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/blogstyles.css"/>
+        <title>Blog Forum Home</title>
+    </head>
+    <body>
+        <div class="container">
+        <section class="section">
+            <h1>Blog Forum</h1>
+            <div id="chosen_button"></div>
+        </section>
+
+        <section class="section">
+            <h1>Latest Posts</h1>
+            <div id="blogDivResults" class="blog-results"></div>
+        </section>
+        </div>
+
+        <script src="/static/blogscript.js"></script>
+        <script>
+        checkIfLoggedHome();
+        getBlogEntries(true);
+        </script>
+    </body>
+</html>
